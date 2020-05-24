@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>378</width>
+    <height>573</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>378</width>
+    <height>573</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/icon.png</normaloff>images/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	color: white;
+	font-family: Cambria;
+}
+
+QFrame{
+	background-color: rgba(0,0,0,180);
+	border-radius: 15px;
+}
+
+QScrollArea QWidget{
+	background-color: rgba(0,0,0,8);
+}
+
+QLabel{
+	background: transparent;
+}
+
+QLineEdit{
+	color: white;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+}
+
+QLineEdit:hover{
+	 border-bottom: 1px solid rgb(255, 18,1);
+}
+
+QPushButton{
+	background-color: rgba(10,10,10,100);
+	color: white;
+	border-radius: 15px;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 18,1);
+	color: white;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>301</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="find">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Find!</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="songArt">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>49</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Song Artist</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="songTitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Song Title</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Song Lyric Finder</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="bg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>921</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/11.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>301</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>301</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <widget class="QPlainTextEdit" name="lyrics">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>281</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string>Mama, just killed a man put a gun against his head
+Pulled my trigger, now he's dead
+Mama, life had just begun
+But now I've gone and thrown it all away
+Mama, ooh didn't mean to make you cry
+If I'm not back again this time tomorrow
+Carry on, carry on as if nothin' really matters
+Too late, my time has come send shivers down my spine
+My body's aching all the time
+Goodbye everybody, I've got to go
+Gotta leave you all behind and face the truth
+Mama, ooh
+(Anyway the wind blows)
+I don't wanna die
+I sometimes wish
+I was never been born at all
+I see a little silhouette-o of a man
+Scaramouche, scaramouche
+Will you do the Fandango?
+Thunderbolts and lightning
+Very, very frightening me
+Galileo, Galileo
+Galileo, Galileo
+Galileo Figaro
+Magnifico, oh, oh, oh
+I'm just a poor boy
+Nobody loves me
+He's just a poor boy from a poor family
+Spare him his life from this monstrosity
+Easy come, easy go, will you let me go?
+Bismillah no, we will not let you go
+Let him go!
+Bismillah, we will not let you go
+Let him go!
+Bismillah, we will not let you go
+Let me go!
+We will not let you go
+Never, let him, let him go
+Oh, let me go
+Oh, no, no, no, no, no, no, no
+Oh, mama mia, mama mia
+Mama mia, let me go
+Beelzebub has a devil put aside for me
+For me! For me!
+So you think you can stone me and spit in my eye?
+So you think you can love me and leave me to die?
+Ohh, baby, can't do this to me, baby
+Just gotta get out, just gotta get right out of here
+Oh, yeah, oh yeah
+Nothing really matters
+Anyone can see
+Nothing really matters
+Nothing really matters to me
+Anyway the wind blows</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>bg</zorder>
+   <zorder>frame</zorder>
+   <zorder>scrollArea</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
